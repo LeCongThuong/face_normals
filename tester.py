@@ -1,7 +1,7 @@
 import torch
 from torch.autograd import Variable
 from torchvision.transforms import Compose, ToTensor
-from resnet_unet import ResNetUNet
+from resnet_unet.resnet_unet_model import ResNetUNet
 import cv2
 import numpy as np
 from PIL import Image
