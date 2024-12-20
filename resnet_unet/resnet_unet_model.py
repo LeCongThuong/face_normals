@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from resnet import resnet18
+from resnet_unet.resnet import resnet18
 
 
 
