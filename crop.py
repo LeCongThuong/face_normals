@@ -3,11 +3,11 @@ import cv2
 from imutils import face_utils
 import dlib
     
-predictor = dlib.shape_predictor('data/shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('/home/love_you/Desktop/acmod/shape_predictor_68_face_landmarks.dat')
 detector = dlib.get_frontal_face_detector()
 
 # load image
-img = cv2.imread('data/original/0.jpg',1)       
+img = cv2.imread('/home/love_you/Desktop/test1.jpg',1)       
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)    
             
 # detect kp
@@ -58,5 +58,5 @@ img = cv2.resize(img[vs:ve,us:ue],(256,256))
 msk = cv2.resize(msk[vs:ve,us:ue],(256,256),interpolation=cv2.INTER_NEAREST)
       
 # save images 
-cv2.imwrite('data/cropped/0.jpg', img)
-cv2.imwrite('data/cropped/0_msk.jpg', msk * 255)
+cv2.imwrite('/home/love_you/Desktop/0.jpg', img)
+cv2.imwrite('/home/love_you/Desktop/0_msk.jpg', msk * 255)
