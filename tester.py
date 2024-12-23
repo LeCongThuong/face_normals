@@ -14,9 +14,9 @@ from tqdm import tqdm
 
 @dataclass
 class Config:
-    data_dir: str = "/mnt/hmi/thuong/Photoface_dist/PhotofaceDBNormal"
-    csv_data_path: str = "/mnt/hmi/thuong/Photoface_dist/PhotofaceDBNormalTrainValTest/dataset_0/test.csv"
-    dest_dir: str = "outputs"
+    data_dir: str = '/mnt/hmi/thuong/Photoface_dist/PhotofaceDBLib/'
+    csv_data_path: str = "/mnt/hmi/thuong/Photoface_dist/PhotofaceDBNormalTrainValTest2/dataset_1/test.csv"
+    dest_dir: str = "outputs_4"
     chkpt_path: str = "data/model.pth"
     batch_size: int = 32
 
@@ -63,6 +63,7 @@ class TestProcessing:
 
 if __name__ == "__main__":
   cfg  = Config()
+  Path(cfg.dest_dir).mkdir(exist_ok=True, parents=True)
   test_process = TestProcessing(cfg)
   test_process.process()
   
