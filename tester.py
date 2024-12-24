@@ -15,8 +15,8 @@ from tqdm import tqdm
 @dataclass
 class Config:
     data_dir: str = '/mnt/hmi/thuong/Photoface_dist/PhotofaceDBLib/'
-    csv_data_path: str = "/mnt/hmi/thuong/Photoface_dist/PhotofaceDBNormalTrainValTest2/dataset_1/test.csv"
-    dest_dir: str = "outputs_4"
+    csv_data_path: str = "/mnt/hmi/thuong/Photoface_dist/PhotofaceDBNormalTrainValTest2/dataset_2/test.csv"
+    dest_dir: str = "outputs_2"
     chkpt_path: str = "data/model.pth"
     batch_size: int = 32
 
