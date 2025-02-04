@@ -2,4 +2,5 @@ resnet_unet/__pycache__/
 data/model.pth
 outputs/*
 __pycache__/
-outputs_2/
+outputs/
+ckpts/
